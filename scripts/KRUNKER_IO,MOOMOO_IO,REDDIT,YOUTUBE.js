@@ -1,4 +1,4 @@
-//if code doesn't work go to  https://greasyfork.org/en/scripts/38857-scriptsource-the-leading-portal-for-web-apps-youtube-reddit-moomoo-io-krunker-io/code
+
 // ==UserScript==
 // @name         Krunker.io 2019 Aimbot (Hacks,Mods,Cheats) | NO DISCONNECT ISSUE | KRUNKERIO.ORG
 // @version      6.7
