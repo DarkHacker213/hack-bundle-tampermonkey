@@ -4,14 +4,49 @@
 // @version      0.0.1
 // @description  auto heal aimbot
 // @author       me
-// @match        http*://surviv.io/
+// @match        *://surviv.io/*
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-    var sound = new Audio("https://r1---sn-3pm7kn7e.googlevideo.com/videoplayback?c=WEB&gir=yes&key=cms1&sparams=clen,dur,ei,expire,gir,id,ip,ipbits,ipbypass,itag,keepalive,lmt,mime,mip,mm,mn,ms,mv,pl,requiressl,source&expire=1551375897&source=youtube&ei=ucl3XNzjMdq5kwapxp_gBQ&keepalive=yes&lmt=1507888664639779&ip=173.255.245.233&pl=40&dur=23.219&id=o-ADvg9dLkJrGXRY75C00K9P96xJInS-ylFrbg1SJlJq7N&signature=03D8458C810E694470CDA2E6244D062F3EA41E26.4E7A625DBA8B2F263314313A7D6247DE1CF425BF&requiressl=yes&clen=370238&fvip=6&itag=140&mime=audio%2Fmp4&ipbits=0&title=Factory+Alarm+Sound&redirect_counter=1&rm=sn-n4vll7e&req_id=5152a4a00695a3ee&cms_redirect=yes&ipbypass=yes&mip=2400:7800:8ab6:c900:e061:864d:a4d8:87e8&mm=31&mn=sn-3pm7kn7e&ms=au&mt=1551354182&mv=m");
-    sound.loop = true;
+    /**
+ * Simulate a key event.
+ * @param {Number} keyCode The keyCode of the key to simulate
+ * @param {String} type (optional) The type of event : down, up or press. The default is down
+ * @param {Object} modifiers (optional) An object which contains modifiers keys { ctrlKey: true, altKey: false, ...}
+ */
+function simulateKey (keyCode, type, modifiers) {
+	var evtName = (typeof(type) === "string") ? "key" + type : "keydown";	
+	var modifier = (typeof(modifiers) === "object") ? modifier : {};
+
+	var event = document.createEvent("HTMLEvents");
+	event.initEvent(evtName, true, false);
+	event.keyCode = keyCode;
+	
+	for (var i in modifiers) {
+		event[i] = modifiers[i];
+	}
+
+	document.dispatchEvent(event);
+}
+
+// Setup some tests
+
+var onKeyEvent = function (event) {
+	var state = "pressed";
+	
+	if (event.type !== "keypress") {
+		state = event.type.replace("key", "");
+	}
+	
+	console.log("Key with keyCode " + event.keyCode + " is " + state);
+};
+
+document.addEventListener("keypress", onKeyEvent, false);
+document.addEventListener("keydown", onKeyEvent, false);
+document.addEventListener("keyup", onKeyEvent, false);
+    function autoheal(){
     var o = document.createElement("a");
     o.setAttribute("id","my_Heart");
     o.style.color = "blue";
@@ -24,16 +59,35 @@
     setInterval(function(){
         o.innerHTML ="HP: " + Math.round(document.getElementById("ui-health-actual").style.width.slice(0,-1));
         if(document.getElementById("game-area-wrapper").style.display == "block"){
-            if(o.innerHTML.slice(5,8) <= 20){
+            if(o.innerHTML.slice(5,8) <= 40){
+                // must have pills or sodas
                 o.style.color = "red";
-                sound.play();
+                var i = 3;
+                while(i > 1){
+               //use sodas for quick heals
+                    simulateKey(57);
+                simulateKey(57, "up");
+                i = i - 1;
+                }
+                i = i + 3;
             } else {
                 if(o.innerHTML.slice(5,8) > 20){
                     o.style.color = "blue";
-                    sound.pause();
+                }else {
+                if(o.innerHTML.slice(5,8) <= 10){
+                // must have medkits or bandages
+                o.style.color = "red";
+                var i = 3;
+                while(i > 1){
+               //use bandages for quick heals
+                    simulateKey(55);
+                simulateKey(55, "up");
+                i = i - 1;
+                }
+                i = i + 3;
+            } 
                 }
             }
-        } else {
-            sound.pause();
-        }
+        } 
     },500);
+    }
