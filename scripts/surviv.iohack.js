@@ -2,7 +2,7 @@
 // @name         Surviv.io hacks
 // @namespace    http://tampermonkey.net/
 // @version      0.0.1
-// @description  auto heal aimbot
+// @description  auto heal aimbot esp
 // @author       me
 // @match        *://surviv.io/*
 // @grant        none
@@ -64,9 +64,9 @@ document.addEventListener("keyup", onKeyEvent, false);
                 o.style.color = "red";
                 var i = 3;
                 while(i > 1){
-               //use sodas for quick heals
-                    simulateKey(57);
-                simulateKey(57, "up");
+               //use soda for quick heal
+                    simulateKey(57,"press");
+                
                 i = i - 1;
                 }
                 i = i + 3;
@@ -77,15 +77,25 @@ document.addEventListener("keyup", onKeyEvent, false);
                 if(o.innerHTML.slice(5,8) <= 10){
                 // must have medkits or bandages
                 o.style.color = "red";
-                var i = 3;
+                
                 while(i > 1){
                //use bandages for quick heals
-                    simulateKey(55);
-                simulateKey(55, "up");
+                    simulateKey(55,"press");
+                
                 i = i - 1;
                 }
                 i = i + 3;
-            } 
+            } else {
+	    
+	    }if(o.innerHTML.slice(5,8) <= 5){
+	    while(i > 1){
+               //use bandages for quick heals
+                    simulateKey(56,"press");
+                
+                i = i - 1;
+                }
+                i = i + 3;
+	    }
                 }
             }
         } 
