@@ -32,7 +32,7 @@ function simulateKey (keyCode, type, modifiers) {
 }
 
 // Setup some tests
-
+/*
 var onKeyEvent = function (event) {
 	var state = "pressed";
 	
@@ -40,13 +40,10 @@ var onKeyEvent = function (event) {
 		state = event.type.replace("key", "");
 	}
 	
-	console.log("Key with keyCode " + event.keyCode + " is " + state);
+	
 };
-
-document.addEventListener("keypress", onKeyEvent, false);
-document.addEventListener("keydown", onKeyEvent, false);
-document.addEventListener("keyup", onKeyEvent, false);
-    function autoheal(){
+*/
+    
     var o = document.createElement("a");
     o.setAttribute("id","my_Heart");
     o.style.color = "blue";
@@ -55,23 +52,22 @@ document.addEventListener("keyup", onKeyEvent, false);
     document.getElementById("ui-boost-counter").parentNode.appendChild(o);
     var reference = document.getElementById('ui-boost-counter');
     reference.parentNode.insertBefore(o, reference);
-
-    setInterval(function(){
         o.innerHTML ="HP: " + Math.round(document.getElementById("ui-health-actual").style.width.slice(0,-1));
-        if(document.getElementById("game-area-wrapper").style.display == "block"){
+        setInterval(function(){
+	if(document.getElementById("game-area-wrapper").style.display == "block"){
             if(o.innerHTML.slice(5,8) <= 40){
                 // must have pills or sodas
                 o.style.color = "red";
                 var i = 3;
                 while(i > 1){
                //use soda for quick heal
-                    simulateKey(57,"press");
+                    simulateKey(57);
                 
                 i = i - 1;
                 }
                 i = i + 3;
             } else {
-                if(o.innerHTML.slice(5,8) > 20){
+                if(o.innerHTML.slice(5,8) > 40){
                     o.style.color = "blue";
                 }else {
                 if(o.innerHTML.slice(5,8) <= 10){
@@ -79,25 +75,26 @@ document.addEventListener("keyup", onKeyEvent, false);
                 o.style.color = "red";
                 
                 while(i > 1){
-               //use bandages for quick heals
-                    simulateKey(55,"press");
+               //use bandages for quick heal
+                    simulateKey(55);
                 
                 i = i - 1;
                 }
                 i = i + 3;
             } else {
-	    
-	    }if(o.innerHTML.slice(5,8) <= 5){
+	    if(o.innerHTML.slice(5,8) <= 5){
 	    while(i > 1){
-               //use bandages for quick heals
-                    simulateKey(56,"press");
+               //use med kit for major heal
+                    simulateKey(56);
                 
                 i = i - 1;
                 }
                 i = i + 3;
-	    }
+	    		}
                 }
+	    }
             }
         } 
     },500);
-    }
+
+}
