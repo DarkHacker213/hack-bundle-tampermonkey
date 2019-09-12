@@ -5,7 +5,7 @@
 // @description  auto heal aimbot esp
 // @author       me
 // @match        *://surviv.io/*
-// @grant        none
+// @grant    	unsafeWindow
 // ==/UserScript==
 
 (function() {
