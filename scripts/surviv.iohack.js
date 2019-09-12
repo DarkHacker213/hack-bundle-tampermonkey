@@ -96,5 +96,9 @@ var onKeyEvent = function (event) {
             }
         } 
     },500);
-
+	document.addEventListener("click",function(){
+		simulatekey("49");
+		simulatekey("50");
+		simulatekey("81");
+});
 }
