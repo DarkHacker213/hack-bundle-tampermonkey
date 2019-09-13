@@ -97,9 +97,6 @@ var onKeyEvent = function (event) {
         } 
     },500);
 	document.addEventListener("click",function(){
-		// make sure that weapons are equipped
-		simulatekey("49");
-		simulatekey("50");
 		simulatekey("81");
 });
 }
