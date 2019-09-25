@@ -96,3 +96,15 @@ auto answer
 best skin
 
 money hack
+
+# DINO GAME HACK INCLUDES
+
+godmode
+
+speedhack
+
+# SNAKE GAME HACK INCLUDES
+
+godmode
+
+no snake size reset
