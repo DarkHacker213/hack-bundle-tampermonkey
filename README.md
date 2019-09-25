@@ -6,6 +6,10 @@ https://bit.ly/2J4yOPw
 
 help me reach a thousand Subs
 
+join my discord server
+
+https://discord.gg/DSmxkZS
+
 # this is repo of tampermonkey scripts for hacking games and for real hacking
 check out supported websites file for a list
 
