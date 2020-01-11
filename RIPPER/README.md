@@ -1,5 +1,6 @@
 # This Is A Free Roblox Exploit In Development
 
+IT IS NOT WORKING RIGHT NOW
 How to use and warnings/suggestions
 
 WARNING 1. Don't use anything from WEAREDEVS. Why? you ask Because all of there exploits get ban waved weekly. and your pretty much srewed
