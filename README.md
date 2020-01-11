@@ -27,6 +27,15 @@ click add new script copy and paste a script from the scripts folder do command-
  just download it and go to chrome://extensions
  
  press dev mode on and then click load unpacked select the extension folder
+# RIPPER MY CUSTOM ROBLOX EXPLOIT
+This Exploit is level 6/7 for every need supports
+httpget
+
+eval
+
+and more
+
+this has no viruses
 # KRUNKER.IO HACK INCLUDES
 
 aimbot
