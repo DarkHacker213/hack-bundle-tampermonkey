@@ -1,6 +1,8 @@
 # This Is A Free Roblox Exploit In Development
 
 IT IS NOT WORKING RIGHT NOW
+It is Still in DEV
+You Are Welcome to Edit It for Yourself
 How to use and warnings/suggestions
 
 WARNING 1. Don't use anything from WEAREDEVS. Why? you ask Because all of there exploits get ban waved weekly. and your pretty much srewed
@@ -13,4 +15,4 @@ SUGGESTION 1. Use SK8R if your a cheap man. SK8R Has Ban Portection and supports
 
 SUGGESTION 2. Use SYNAPSE X if you want the best of the best . it costs $20 supports every thing has unique scripts download https://x.synapse.to/
 
-SUGGESTION 3. If you want something unique use OXYGEN X. it is slightly worse then SK8R
+SUGGESTION 3. If you want something unique use OXYGEN X. it is slightly worse then SK8R. But Undetectable.
