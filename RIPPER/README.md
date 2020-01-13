@@ -13,4 +13,4 @@ SUGGESTION 1. Use SK8R if your a cheap man. SK8R Has Ban Portection and supports
 
 SUGGESTION 2. Use SYNAPSE X if you want the best of the best . it costs $20 supports every thing has unique scripts download https://x.synapse.to/
 
-
+SUGGESTION 3. If you want something unique use OXYGEN X. it is slightly worse then SK8R
