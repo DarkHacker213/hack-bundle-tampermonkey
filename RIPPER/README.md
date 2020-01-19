@@ -1,8 +1,7 @@
 # This Is A Free Roblox Exploit In Development
 
-IT IS NOT WORKING RIGHT NOW
-It is Still in DEV
-You Are Welcome to Edit It for Yourself
+RIPPER v1.0 IS NOW WORKING ENJOY HAVE FUN 
+
 How to use and warnings/suggestions
 
 WARNING 1. Don't use anything from WEAREDEVS. Why? you ask Because all of there exploits get ban waved weekly. and your pretty much srewed
