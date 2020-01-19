@@ -30,11 +30,17 @@ click add new script copy and paste a script from the scripts folder do command-
 # RIPPER MY CUSTOM ROBLOX EXPLOIT
 This Exploit is level 6/7 for every need 
 
-jailbreak gui
+JAILBREAK GUI
 
-ninja legends gui
+NINJA LEGENDS GUI
 
-aimbot
+ILLUM 2 GUI
+
+ARSENEL GUI
+
+PHANTOM FORCES GUI
+
+will and more later
 
 and more
 
