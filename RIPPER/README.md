@@ -2,6 +2,8 @@
 
 RIPPER v1.0 IS NOW WORKING ENJOY HAVE FUN 
 
+if you want the scripts just go into the scripts folder
+
 How to use and warnings/suggestions
 
 WARNING 1. Don't use anything from WEAREDEVS. Why? you ask Because all of there exploits get ban waved weekly. and your pretty much srewed
