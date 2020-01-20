@@ -28,6 +28,9 @@ click add new script copy and paste a script from the scripts folder do command-
  
  press dev mode on and then click load unpacked select the extension folder
 # RIPPER MY CUSTOM ROBLOX EXPLOIT
+
+GO TO THE RIPPER FOLDER AND DOWNLOAD
+
 This Exploit is level 6/7 for every need 
 
 JAILBREAK GUI
