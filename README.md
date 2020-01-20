@@ -2,7 +2,7 @@ warning: this is just other people scripts i'm just putting to togther
 
 # SUBSCRIBE NOW
 
-https://bit.ly/2J4yOPw
+https://bit.ly/2Rz36Md
 
 help me reach a thousand Subs
 
